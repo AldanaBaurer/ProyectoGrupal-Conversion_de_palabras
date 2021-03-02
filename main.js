@@ -9,8 +9,10 @@ function convertir(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-/* hint: convert all to uppercase
-function convertirTodo(string){
-    return string.toUpperCase();
+function mostrarTexto() {
+    var mayuscula = document.getElementById('datos').value;
+    var textMay = mayuscula.toLocaleUpperCase();
+
+    console.log(textMay);
+    document.getElementById('resultadoTexto').innerHTML = textMay;
 }
-*/
